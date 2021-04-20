@@ -7,7 +7,7 @@ The main function called **FUN_0010127e** and a few other functions.
 ```
 def FUN_0010127e():
     local_18 = input("name")  
-    local_1c =  **FUN_00101169**(local_18)  
+    local_1c = FUN_00101169(local_18)  
     local_20 = input("serial")  
     FUN_0010124b(local_1c,local_20,local_20)      # Why 3rd argument?  
 
