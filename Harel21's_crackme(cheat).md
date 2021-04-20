@@ -13,7 +13,7 @@ def FUN_0010127e():
 
 
 def FUN_00101169(local_18): 
-    iVar1 = int(len(local_18))                    # local_18 = input("name")  
+    iVar1 = int(len(local_18))                    # local_18 = int(len("name")) 
     if ((iVar1 - 1U & 1) == 0):  
         something?  
     else:  
