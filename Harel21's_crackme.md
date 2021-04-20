@@ -1,5 +1,5 @@
 
-Visit the [C++ code](Harel21_crackme(cheat).cpp) for cpp code and some in-depth explanation.  
+Visit the [C++ code](Harel21_crackme.cpp) for cpp code and some in-depth explanation.  
 
 On checking C++ code using ghidra, The c++ code was analyzed.  
 The main function called **FUN_0010127e** and a few other functions.  
@@ -38,4 +38,18 @@ The correct method seems to be creating a keygen which will create a key based o
 
 But, we already know that the resultant iVar1 of a single digited 'name' will be int(00)  
 So we can just use a single character 'name' and then use 0 as serial.  
-Yay!
+Yay!  
+
+Else: use this .py code to get serial output.
+```
+name = input("Name: ")
+iVar1 = int(len(name))
+
+iVar1 = ((iVar1 - 1) * 645629)            # 0x9d9fd = 645629
+
+if (iVar1 < 0) :
+	iVar1 = iVar1 + 3;
+iVar1 = ((iVar1 >> 2) * 0xd) / 7; 
+
+print("Serial: ", int(iVar1))
+```
