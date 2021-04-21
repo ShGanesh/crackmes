@@ -9,3 +9,8 @@ From there we can understand that:
 - If local_1028 == local_1128: Success. else: Fail.
 
 keygen at [save_scooby_keygen.c](save_scooby_keygen.c)
+
+Also, for some reason key: 
+> $   
+
+also works
